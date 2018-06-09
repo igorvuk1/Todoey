@@ -12,8 +12,9 @@
 		AF662A1C20C98EA900AD2E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF662A1A20C98EA900AD2E0F /* Main.storyboard */; };
 		AF662A1E20C98EAB00AD2E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF662A1D20C98EAB00AD2E0F /* Assets.xcassets */; };
 		AF662A2120C98EAB00AD2E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF662A1F20C98EAB00AD2E0F /* LaunchScreen.storyboard */; };
-		AF662A2920CA736F00AD2E0F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF662A2820CA736F00AD2E0F /* Item.swift */; };
 		AF662A2F20CA7C9100AD2E0F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF662A2E20CA7C9100AD2E0F /* Default-568h@2x.png */; };
+		AF662A3220CAEC0800AD2E0F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF662A3020CAEC0800AD2E0F /* DataModel.xcdatamodeld */; };
+		AF662A5520CC55E500AD2E0F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF662A5420CC55E500AD2E0F /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		AF662A1D20C98EAB00AD2E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF662A2020C98EAB00AD2E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF662A2220C98EAB00AD2E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF662A2820CA736F00AD2E0F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AF662A2E20CA7C9100AD2E0F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AF662A3120CAEC0800AD2E0F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		AF662A5420CC55E500AD2E0F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,7 @@
 		AF662A2A20CA737400AD2E0F /* Data model */ = {
 			isa = PBXGroup;
 			children = (
-				AF662A2820CA736F00AD2E0F /* Item.swift */,
+				AF662A3020CAEC0800AD2E0F /* DataModel.xcdatamodeld */,
 			);
 			path = "Data model";
 			sourceTree = "<group>";
@@ -80,6 +82,7 @@
 		AF662A2B20CA738300AD2E0F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AF662A5420CC55E500AD2E0F /* CategoryViewController.swift */,
 				AF662A1820C98EA900AD2E0F /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -174,9 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF662A5520CC55E500AD2E0F /* CategoryViewController.swift in Sources */,
 				AF662A1920C98EA900AD2E0F /* TodoListViewController.swift in Sources */,
-				AF662A2920CA736F00AD2E0F /* Item.swift in Sources */,
 				AF662A1720C98EA900AD2E0F /* AppDelegate.swift in Sources */,
+				AF662A3220CAEC0800AD2E0F /* DataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF662A3020CAEC0800AD2E0F /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF662A3120CAEC0800AD2E0F /* Model.xcdatamodel */,
+			);
+			currentVersion = AF662A3120CAEC0800AD2E0F /* Model.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AF662A0B20C98EA900AD2E0F /* Project object */;
 }
