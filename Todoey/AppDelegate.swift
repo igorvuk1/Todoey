@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+       // print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        
+        
+//        do {
+//            let realm = try! Realm()
+//        }
+//        catch {
+//            print("Error during initialization real, \(error)")
+//        }
        
         return true
     }
@@ -27,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
     
-    // MARK: - Core Data stack
+    //MARK: - Core Data stack
     
     lazy var persistentContainer: NSPersistentContainer = {
 
@@ -48,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 try context.save()
             } catch {
-                
+
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
